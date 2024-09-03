@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+
+header {
+  background-color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-right: 70px;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+}
+
+.navigation li {
+  
+  margin-left: 80px;
+  display: inline-block;
+}
+
+.navigation a {
+  color: #333;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  color: black;
+}
+
+
+#home-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('background1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+
+#home-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#home-section p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Promotions Section Styles */
+#promos-offers {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.promos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promo {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.promo h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.promo p {
+  font-size: 16px;
+}
+
+
+footer {
+  background-color: #fff;
+  padding: 1em;
+  text-align: center;
+  color: #333;
+  margin-top: auto;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-background {
+  padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="background-cover">
+        <nav class="top-navigation">
+            <a class="logo" href="#">Adventura</a>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="book.php">Book</a></li>
+                <li><a href="packages.php">Packages</a></li>
+                <li><a href="rooms.php">Rooms</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home-section" class="background-cover">
+        <h1>Explore  This Hidden Gem with Exceptional Hospitality</h1>
+        <p>Embark on unforgettable journey to a unique destination and experience unparalleled service. Book your dream adventure today</p>
+    </section>
+
+    <section id="promos-offers" class="background-cover">
+        <h2>Promos and Offers</h2>
+        <div class="promos-container">
+            <div class="promo">
+                <h3>Early Bird Discount</h3>
+                <p>Book your stay at least 30 days in advance and enjoy a 20% discount on your total booking. This limited-time offer is perfect for those who plan ahead and want to secure the best rates. Don’t miss out—start planning your next getaway today!</p>
+            </div>
+            <div class="promo">
+                <h3>Queens Members Club</h3>
+                <p>Join our exclusive Queens Members Club and unlock a range of premium benefits including 10% off every booking and complimentary room upgrades. Sign up now to enjoy these perks and become a valued member of our community</p>
+            </div>
+            <div class="promo">
+                <h3>Book 4 days, Get 1 day Free</h3>
+                <p>Take advantage of our special offer: book a stay for 4 days and receive the 5th day absolutely free! This is the perfect opportunity for a longer, more relaxing vacation. Whether you're planning a family trip or a romantic getaway, enjoy extra value with this unbeatable deal.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="background-cover">
+        <p>&copy; 2024 Adventura. All rights reserved.</p>
+    </footer>
+</body>
+</html>

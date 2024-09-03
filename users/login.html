@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Management System - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-box {
+      padding: 20px;
+    }
+
+    #title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+    }
+
+    .input-field input[type="text"], .input-field input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+
+    .input-field input[type="text"]:focus, .input-field input[type="password"]:focus {
+      border-color: #aaa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-field {
+      margin-top: 20px;
+    }
+
+    button[type="button"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #registerBtn {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    #registerBtn:hover {
+      background-color: #3e8e41;
+    }
+
+    #loginBtn {
+      background-color: #337ab7;
+      color: #fff;
+    }
+
+    #loginBtn:hover {
+      background-color: #23527c;
+    }
+
+    a {
+      text-decoration: none;
+      color: #337ab7;
+    }
+
+    a:hover {
+      color: #23527c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1 id="title">Login In</h1>
+      <form method="POST" action="login.php">
+        <div class="input-group">
+          <div class="input-field">
+            <input type="text" name="email" placeholder="Email" required>
+          </div>
+          <div class="input-field">
+            <input type="password" name="password" placeholder="Password" required>
+          </div>
+          <p>Forgot password <a href="#">Click Here!</a></p>
+        </div>
+        <div class="btn-field">
+          <button type="button" onclick="window.location.href='registration.html'" id="registerBtn">Register</button>
+          <button type="submit" id="loginBtn">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
